@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Peralta&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --blue: #4b40c5;
+  --orange: #ec682c;
+  --white: #fff;
+  --black: #000;
+  --radious-card-shadow: 0px 2.4631879329681396px 4.187419891357422px 0px rgba(0, 0, 0, 0),
+    0px 10.838027954101562px 8.67042064666748px 0px rgba(0, 0, 0, 0.01),
+    0px 26.60243034362793px 17.291582107543945px 0px rgba(0, 0, 0, 0.01),
+    0px 51.234317779541016px 33.893463134765625px 0px rgba(0, 0, 0, 0.01),
+    0px 86.2115707397461px 62.318668365478516px 0px rgba(0, 0, 0, 0.02),
+    0px 133.0121612548828px 106.40972137451172px 0px rgba(0, 0, 0, 0.02);
+}
+
+.header {
+background: url(background2.jpg) no-repeat 50% center;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+position: relative;
+opacity: 0.9;
+overflow: hidden;
+}
+
+
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.logo {
+margin-top: 48px;
+margin-left: 55px;
+}
+
+.logo a {
+color: var(--black);
+font-family: Peralta;
+font-size: 40px;
+font-weight: 600;
+text-decoration: none;
+}
+
+.nav-list {
+flex: 1;
+text-align: right;
+}
+
+.nav-list ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 50px 54px 0px 13px;
+}
+
+nav ul li a {
+  color: var(--1st, #212832);
+  text-align: center;
+  font-size: 22.612px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul li .btn-orange {
+  border-radius: 8px;
+  border: 1px solid var(--orange);
+  background: var(--orange);
+  height: 40px;
+  padding: 8px 20px;
+  color: var(--white);
+  font-size: 22.612px;
+  font-weight: 400;
+}
+
+.text-box {
+  text-align: start;
+  margin: 180px 0px 451px 41px;
+  position: relative;
+  top: 125px;
+}
+
+.text-box > h1 {
+  color: var(--blue);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 118.381px;
+  letter-spacing: -1.92px;
+}
+
+.text-box > h2 {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-box > button {
+  border-radius: 13.301px;
+  background: #4b40c5;
+  box-shadow: 0px 26.60243034362793px 46.55425262451172px 0px rgba(241, 165, 1, 0.15);
+  color: #fff1da;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 23.942px;
+  font-weight: 500;
+  border: none;
+  padding: 1rem;
+  margin-top: 26px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4rem auto;
+  z-index: 500;
+}
+
+.category-container > p {
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.category-container > h1 {
+  color: var(--3rd, #14183e);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.btn-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container button {
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-container button:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+@media only screen and (max-width: 1222px) {
+  .nav-list ul li {
+    margin: 50px 30px 0px 13px;
+  }
+
+  .text-box {
+    margin: 100px 0px 451px 41px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .text-box {
+    margin: 0px 0px 451px 41px;
+    top: 60px;
+  }
+
+  nav ul li .btn-orange {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-list ul li {
+    margin: 50px 15px 0px 13px;
+  }
+
+  .text-box {
+    margin: 10px 0px 451px 41px;
+  }
+
+  nav ul li .btn-orange {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .text-box > h1 {
+    font-size: 36px;
+  }
+
+  .text-box > h2 {
+    font-size: 24px;
+  }
+
+  .nav-list ul li {
+    margin: 25px 15px 0px 13px;
+  }
+
+  .text-box {
+    margin: 10px 0px 451px 15px;
+  }
+
+  .category-container > p {
+    font-size: 24px;
+  }
+
+  .category-container > h1 {
+    font-size: 32px;
+  }
+
+  .btn-container button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .nav-list ul li {
+    margin: 25px 5px 0px 5px;
+  }
+
+  .text-box {
+    margin: 10px 0px 451px 5px;
+  }
+
+  .category-container > p {
+    font-size: 20px;
+  }
+
+.category-container > h1 {
+    font-size: 28px;
+}
+.btn-container button {
+    padding: 6px 15px;
+    font-size: 12px;
+}
+}
